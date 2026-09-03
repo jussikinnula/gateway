@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Gateway — preview</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:#000;overflow:hidden;
+            font:13px/1.5 "Segoe UI",system-ui,sans-serif;color:#cfd8e6}
+  #c{display:block;width:100vw;height:100vh}
+  #ui{position:fixed;left:0;right:0;bottom:0;padding:10px 14px;
+      background:linear-gradient(transparent,rgba(6,6,16,.88) 38%);
+      display:flex;gap:12px;align-items:center;flex-wrap:wrap;user-select:none}
+  #ui.hidden{display:none}
+  button{background:#1a1830;color:#cfd8e6;border:1px solid #3a3560;border-radius:5px;
+         padding:5px 11px;font:inherit;cursor:pointer}
+  button:hover{background:#252146}
+  button.on{background:#7b5cff;border-color:#7b5cff;color:#0a0714}
+  #bar{flex:1 1 260px;height:26px;position:relative;cursor:pointer;min-width:200px}
+  #track{position:absolute;top:11px;left:0;right:0;height:4px;background:#241f3c;border-radius:2px}
+  #fill{position:absolute;top:11px;left:0;height:4px;background:#7b5cff;border-radius:2px}
+  .tick{position:absolute;top:5px;width:1px;height:16px;background:#4b4477}
+  .tick.alt{background:#2ec5b6}
+  #read{font:12px ui-monospace,Consolas,monospace;color:#9ae7dd;white-space:pre;min-width:300px}
+  #shots{display:flex;gap:5px;flex-wrap:wrap}
+  #shots button{padding:3px 8px;font-size:11px}
+  #hint{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;
+        font-size:15px;color:#bda9ff;text-shadow:0 2px 18px #000;pointer-events:none}
+  #hint small{display:block;color:#7d7699;font-size:12px;margin-top:6px}
+  body.render #ui,body.render #hint{display:none}
+  body.render #c{width:auto;height:auto}
+</style></head><body>
+<canvas id="c"></canvas>
+<div id="hint">Click to start<small>space = play/pause · H = hide UI · ←→ = ±1 bar (shift = beat)</small></div>
+<div id="ui">
+  <button id="play">▶</button>
+  <div id="scenes" style="display:flex;gap:5px;flex-wrap:wrap"></div>
+  <button id="loopBtn" class="on">Loop</button>
+  <div id="bar"><div id="track"></div><div id="fill"></div></div>
+  <div id="read">—</div>
+  <div id="shots"></div>
+  <button id="res" title="Render scale">1×</button>
+</div>
+<audio id="au" preload="auto"></audio>
+<script type="module" src="/src/main.js"></script>
+</body></html>

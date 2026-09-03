@@ -1,0 +1,95 @@
+{
+  "method": "Whole-bar boundaries from mel and MFCC/chroma novelty, cross-checked against per-bar 40-140 Hz kick energy and vocal-stem activity. Names follow the audio; the Suno running order is only a vocabulary guide.",
+  "sections": [
+    {
+      "id": "intro",
+      "name": "Intro",
+      "bar": 1,
+      "end": 30,
+      "label": "breakbeat grows; opening vocal calls",
+      "color": "#20243f",
+      "evidence": "kick lifts at bar 10; vocals enter in bar 13; full kick and bass enter at bar 30",
+      "conf": "high"
+    },
+    {
+      "id": "groove_a",
+      "name": "Groove / Drop A",
+      "bar": 30,
+      "end": 54,
+      "label": "full kick and bass; first vocoder hook",
+      "color": "#2b3468",
+      "evidence": "kick 0.16 to 0.75 at bar 30; first full Gateway hook spans roughly bars 38-45",
+      "conf": "high"
+    },
+    {
+      "id": "build",
+      "name": "Build",
+      "bar": 54,
+      "end": 70,
+      "label": "drums strip back and rebuild",
+      "color": "#3b3a86",
+      "evidence": "kick 0.68 to 0.23 and RMS 0.79 to 0.38 at bar 54; energy rises into bar 70",
+      "conf": "high"
+    },
+    {
+      "id": "groove_b",
+      "name": "Groove / Hook B",
+      "bar": 70,
+      "end": 96,
+      "label": "spoken bridge, vocoder and two-bar cut",
+      "color": "#5b45b8",
+      "evidence": "full kick returns at bar 70; two-bar drum cut at 78-79; new phrase at 80; one-bar cut at 95",
+      "conf": "high"
+    },
+    {
+      "id": "groove_c",
+      "name": "Groove C",
+      "bar": 96,
+      "end": 113,
+      "label": "partial drums, shout tails, then full drive",
+      "color": "#2b3468",
+      "evidence": "drums return partially at 96 and fully at 104; kick and RMS collapse into 112-113",
+      "conf": "high"
+    },
+    {
+      "id": "breakdown",
+      "name": "Breakdown",
+      "bar": 113,
+      "end": 120,
+      "label": "drums cut; rhythmic vocal chops",
+      "color": "#161a2e",
+      "evidence": "kick falls to 0.15 at bar 113; a seven-bar truncated phrase leads directly to the return at 120",
+      "conf": "high"
+    },
+    {
+      "id": "rebuild",
+      "name": "Rebuild",
+      "bar": 120,
+      "end": 128,
+      "label": "kick and bass return for eight bars",
+      "color": "#3b3a86",
+      "evidence": "kick 0.23 to 0.90 and RMS 0.46 to 0.92 at bar 120; exact eight-bar phrase",
+      "conf": "high"
+    },
+    {
+      "id": "climax",
+      "name": "Climax",
+      "bar": 128,
+      "end": 150,
+      "label": "maximum drive, staggered breaks, final hook begins",
+      "color": "#7b5cff",
+      "evidence": "highest RMS/kick from bar 128; cuts at 137 and 140, spoken reprise at 141-143, vocoder hook from 144",
+      "conf": "high"
+    },
+    {
+      "id": "outro",
+      "name": "DJ Outro",
+      "bar": 150,
+      "end": 176,
+      "label": "final hook resolves; drums continue and fade",
+      "color": "#242a48",
+      "evidence": "kick 0.02 to 0.80 at bar 150; vocals end in bar 158; layers thin sharply at bars 173-175",
+      "conf": "high"
+    }
+  ]
+}

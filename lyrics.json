@@ -1,0 +1,567 @@
+{
+ "source": "Spot - Gateway (Mix 2026).mp3",
+ "measurementSource": "Spot - Gateway (2026 Mix) - Only vocals.wav",
+ "method": "Second pass. Text, running order and kinds are unchanged from the first pass (faster-whisper large-v3-turbo, blind and lyric-biased, on the supplied vocal stem). Every start and end was then re-derived from the stem itself: 180-6000 Hz magnitude at 2.49 ms resolution, voiced regions by hysteresis, attacks by spectral flux. A cue was moved only where its start carried under 30% of the following phrase's peak AND a real attack (rise >=2.5x the preceding 120 ms, carrying >=25% of the next 2 s) sat within +1.5 s and at least 3x louder; cues are never moved earlier. Inside continuous vocoder passages there is no measurable attack, so those cues are held at their first-pass position and marked low. Ends are the release of the phrase body (smoothed envelope under 22% of its own peak for 150 ms), capped for readability and never running into the next cue.",
+ "clock": "All times are the runtime MP3 clock. The stem is 0.051156 s ahead of it; measurements were shifted by +51.156 ms. Verified independently by cross-correlating the stem's vocal-band envelope against the MP3's centre channel: +0.050 s, matching the 2256-sample figure.",
+ "reference": "Spot - Gateway (Mix 2026).txt (Suno lyric sheet; audio/stem is authoritative)",
+ "revisionNote": "Seventh pass. Every cue has now been auditioned against the burn-in video. The 'Gateway' at 4:08 moved to bar 150 beat 1, where the stem's onset sits 2 ms off the downbeat. Ten cues confirmed by ear and upgraded to high; the two outro cues confirmed in position but held at med because they are not in the supplied vocal stem and nothing measurable sits under them. The 'Gateway' swell at 4:02-4:08 is an echo of the hook rather than a sung line and is deliberately left uncaptioned. 43 cues, no low.",
+ "notInAudio": [],
+ "notInAudioNote": "Every lexical line in the sheet is detected at least once; bracketed production notes are not treated as lyrics.",
+ "notInSheet": [
+  "Woo! ad-lib at 178.79-184.49 (MP3 clock)",
+  "long repeated Go! vocal loop at 190.68-204.30",
+  "short Hey!/Go! ad-lib at 218.81-220.55 (word uncertain)",
+  "Keep moving. / Don’t look back. repeat at 233.79-238.36",
+  "a third extended Gateway / Open wide / Take me through / Gateway / Into the light hook at 239.10-261.16",
+  "final Go! at about 261.28"
+ ],
+ "notWords": [
+  {
+   "t": 52.79,
+   "e": 53.09,
+   "reason": "short reverb/vocoder tail or separation-free stem artefact; neither ASR pass contains a distinct word"
+  },
+  {
+   "t": 53.2,
+   "e": 53.49,
+   "reason": "short reverb/vocoder tail or separation-free stem artefact; neither ASR pass contains a distinct word"
+  },
+  {
+   "t": 53.65,
+   "e": 53.91,
+   "reason": "short reverb/vocoder tail or separation-free stem artefact; neither ASR pass contains a distinct word"
+  },
+  {
+   "t": 54.07,
+   "e": 54.31,
+   "reason": "short reverb/vocoder tail or separation-free stem artefact; neither ASR pass contains a distinct word"
+  },
+  {
+   "t": 54.49,
+   "e": 54.73,
+   "reason": "short reverb/vocoder tail or separation-free stem artefact; neither ASR pass contains a distinct word"
+  },
+  {
+   "t": 77.94,
+   "e": 78.08,
+   "reason": "short reverb/vocoder tail or separation-free stem artefact; neither ASR pass contains a distinct word"
+  },
+  {
+   "t": 173.69,
+   "e": 173.95,
+   "reason": "short reverb/vocoder tail or separation-free stem artefact; neither ASR pass contains a distinct word"
+  },
+  {
+   "t": 174.13,
+   "e": 174.31,
+   "reason": "short reverb/vocoder tail or separation-free stem artefact; neither ASR pass contains a distinct word"
+  },
+  {
+   "t": 184.66,
+   "e": 184.93,
+   "reason": "short reverb/vocoder tail or separation-free stem artefact; neither ASR pass contains a distinct word"
+  },
+  {
+   "t": 194.908,
+   "e": 196.011,
+   "meter": "117.2",
+   "reason": "instrument bleeding into the vocal-only stem, not a word; identified by ear"
+  },
+  {
+   "t": 242.316,
+   "e": 248.434,
+   "meter": "145.4",
+   "reason": "a \"Gateway\" swell echoing the hook rather than a sung line; deliberately left uncaptioned (decided by ear)"
+  }
+ ],
+ "unaccountedVocalRegions": [
+  {
+   "t": 74.711,
+   "e": 75.128,
+   "bar": 45.38,
+   "meter": "45.2",
+   "peak": 0.98,
+   "reason": "vocal energy in the stem that no cue covers — probably a vocoder tail; not yet auditioned"
+  },
+  {
+   "t": 160.644,
+   "e": 162.849,
+   "bar": 96.94,
+   "meter": "96.4",
+   "peak": 0.46,
+   "reason": "vocal energy in the stem that no cue covers — probably a vocoder tail; not yet auditioned"
+  },
+  {
+   "t": 163.5,
+   "e": 164.096,
+   "bar": 98.65,
+   "meter": "98.3",
+   "peak": 0.39,
+   "reason": "vocal energy in the stem that no cue covers — probably a vocoder tail; not yet auditioned"
+  },
+  {
+   "t": 164.757,
+   "e": 165.755,
+   "bar": 99.4,
+   "meter": "99.2",
+   "peak": 0.37,
+   "reason": "vocal energy in the stem that no cue covers — probably a vocoder tail; not yet auditioned"
+  },
+  {
+   "t": 167.673,
+   "e": 171.681,
+   "bar": 101.15,
+   "meter": "101.1",
+   "peak": 0.41,
+   "reason": "vocal energy in the stem that no cue covers — probably a vocoder tail; not yet auditioned"
+  },
+  {
+   "t": 250.547,
+   "e": 251.165,
+   "bar": 150.88,
+   "meter": "150.4",
+   "peak": 0.54,
+   "reason": "vocal energy in the stem that no cue covers — probably a vocoder tail; not yet auditioned"
+  },
+  {
+   "t": 261.325,
+   "e": 262.2,
+   "bar": 157.35,
+   "meter": "157.2",
+   "peak": 0.73,
+   "reason": "vocal energy in the stem that no cue covers — probably a vocoder tail; not yet auditioned"
+  }
+ ],
+ "lyrics": [
+  {
+   "t": 20.275,
+   "e": 21.975,
+   "text": "Hey!",
+   "kind": "shout",
+   "bar": 12.71,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack"
+  },
+  {
+   "t": 24.101,
+   "e": 25.162,
+   "text": "Move!",
+   "kind": "shout",
+   "bar": 15.01,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack"
+  },
+  {
+   "t": 27.444,
+   "e": 28.751,
+   "text": "Open your eyes.",
+   "kind": "spoken",
+   "bar": 17.02,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack"
+  },
+  {
+   "t": 31.006,
+   "e": 32.31,
+   "text": "The gateway is open.",
+   "kind": "spoken",
+   "bar": 19.15,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack"
+  },
+  {
+   "t": 42.255,
+   "e": 43.955,
+   "text": "Higher!",
+   "kind": "shout",
+   "bar": 25.9,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; word and position confirmed by ear"
+  },
+  {
+   "t": 48.571,
+   "e": 49.731,
+   "text": "Go!",
+   "kind": "shout",
+   "bar": 29.69,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; word and position confirmed by ear"
+  },
+  {
+   "t": 62.447,
+   "e": 63.36,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 38.02,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack, bar 38.02"
+  },
+  {
+   "t": 64.919,
+   "e": 66.43,
+   "text": "Open wide",
+   "kind": "hook",
+   "bar": 39.5,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; confirmed by ear (~1:05)"
+  },
+  {
+   "t": 67.992,
+   "e": 69.024,
+   "text": "Take me through",
+   "kind": "hook",
+   "bar": 41.34,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; confirmed by ear (~1:07)"
+  },
+  {
+   "t": 69.104,
+   "e": 69.79,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 42.01,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "sub-onset inside the phrase, bar 42.01; placed and confirmed by ear"
+  },
+  {
+   "t": 71.379,
+   "e": 74.079,
+   "text": "Into the light",
+   "kind": "hook",
+   "bar": 43.38,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; confirmed by ear (1:11)"
+  },
+  {
+   "t": 75.333,
+   "e": 76.071,
+   "text": "Hey!",
+   "kind": "shout",
+   "bar": 45.75,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "rise measured in the stem; placed by ear at bar 45 beat 4"
+  },
+  {
+   "t": 81.349,
+   "e": 81.933,
+   "text": "Come on!",
+   "kind": "shout",
+   "bar": 49.36,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack"
+  },
+  {
+   "t": 82.2,
+   "e": 83.484,
+   "text": "Move!",
+   "kind": "shout",
+   "bar": 49.87,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "inside a continuous vocoder passage; position confirmed by ear"
+  },
+  {
+   "t": 115.105,
+   "e": 115.733,
+   "text": "Keep moving.",
+   "kind": "spoken",
+   "bar": 69.61,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack"
+  },
+  {
+   "t": 120.722,
+   "e": 121.817,
+   "text": "Don’t look back.",
+   "kind": "spoken",
+   "bar": 72.98,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; end extended to the phrase release"
+  },
+  {
+   "t": 128.574,
+   "e": 129.609,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 77.69,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem rise; first of five, moved earlier by ear and confirmed"
+  },
+  {
+   "t": 129.689,
+   "e": 130.233,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 78.36,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "2/5 — 1.5-beat pulse measured in the stem, rhythm confirmed by ear"
+  },
+  {
+   "t": 130.313,
+   "e": 130.859,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 78.74,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "3/5"
+  },
+  {
+   "t": 130.939,
+   "e": 131.485,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 79.11,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "4/5"
+  },
+  {
+   "t": 131.565,
+   "e": 132.333,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 79.49,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "5/5"
+  },
+  {
+   "t": 145.75,
+   "e": 146.431,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 88.0,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack, bar 88.00; confirmed by ear"
+  },
+  {
+   "t": 148.142,
+   "e": 149.856,
+   "text": "Open wide",
+   "kind": "hook",
+   "bar": 89.43,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack"
+  },
+  {
+   "t": 151.335,
+   "e": 153.101,
+   "text": "Take me through",
+   "kind": "hook",
+   "bar": 91.35,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "start of a voiced region"
+  },
+  {
+   "t": 154.705,
+   "e": 157.405,
+   "text": "Into the light",
+   "kind": "hook",
+   "bar": 93.37,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "start of a voiced region"
+  },
+  {
+   "t": 158.344,
+   "e": 160.044,
+   "text": "Everybody!",
+   "kind": "shout",
+   "bar": 95.56,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack"
+  },
+  {
+   "t": 172.08,
+   "e": 172.661,
+   "text": "Go!",
+   "kind": "shout",
+   "bar": 103.8,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; by ear this lands at the END of the figure"
+  },
+  {
+   "t": 179.072,
+   "e": 180.772,
+   "text": "Woo!",
+   "kind": "adlib",
+   "bar": 107.99,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "start of a voiced region"
+  },
+  {
+   "t": 191.798,
+   "e": 192.147,
+   "text": "Go!",
+   "kind": "adlib",
+   "bar": 115.63,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack, bar 115 beat 3 + an eighth; placed by ear"
+  },
+  {
+   "t": 192.227,
+   "e": 192.568,
+   "text": "Go!",
+   "kind": "adlib",
+   "bar": 115.89,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack, bar 115 beat 4 + an eighth; one beat after the first"
+  },
+  {
+   "t": 192.648,
+   "e": 192.948,
+   "text": "Go!",
+   "kind": "adlib",
+   "bar": 116.14,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack, bar 116 beat 1 + an eighth; one beat after the second"
+  },
+  {
+   "t": 198.657,
+   "e": 198.959,
+   "text": "Go!",
+   "kind": "shout",
+   "bar": 119.74,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "start of a voiced region, 10 ms off beat 4 of bar 119; word given by ear"
+  },
+  {
+   "t": 219.126,
+   "e": 220.173,
+   "text": "Go!",
+   "kind": "adlib",
+   "bar": 132.03,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; word settled by ear (the two ASR passes disagreed)"
+  },
+  {
+   "t": 234.082,
+   "e": 234.798,
+   "text": "Keep moving.",
+   "kind": "spoken",
+   "bar": 141.0,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack"
+  },
+  {
+   "t": 237.407,
+   "e": 239.003,
+   "text": "Don’t look back.",
+   "kind": "spoken",
+   "bar": 142.99,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; end extended to the phrase release"
+  },
+  {
+   "t": 239.083,
+   "e": 240.783,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 144.0,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "bar 144.00 exactly, matching bar 38.02 and 88.00; confirmed by ear"
+  },
+  {
+   "t": 249.08,
+   "e": 249.933,
+   "text": "Gateway",
+   "kind": "hook",
+   "bar": 150.0,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "moved by ear to bar 150 beat 1 — the onset there sits 2 ms off the downbeat"
+  },
+  {
+   "t": 251.39,
+   "e": 253.497,
+   "text": "Open wide",
+   "kind": "hook",
+   "bar": 151.38,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "inside a continuous vocoder passage; position confirmed by ear"
+  },
+  {
+   "t": 253.577,
+   "e": 254.38,
+   "text": "Open wide",
+   "kind": "hook",
+   "bar": 152.7,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "second, repeated Open wide — stem attack at bar 152 beat 3, heard by ear, and both ASR passes have it"
+  },
+  {
+   "t": 254.46,
+   "e": 257.16,
+   "text": "Take me through",
+   "kind": "hook",
+   "bar": 153.23,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "inside a continuous vocoder passage; position confirmed by ear"
+  },
+  {
+   "t": 258.027,
+   "e": 260.727,
+   "text": "Into the light",
+   "kind": "hook",
+   "bar": 155.37,
+   "conf": "high",
+   "method": "measured+ear",
+   "note": "stem attack; confirmed by ear (4:18)"
+  },
+  {
+   "t": 268.42,
+   "e": 270.12,
+   "text": "Everybody!",
+   "kind": "shout",
+   "bar": 161.6,
+   "conf": "med",
+   "method": "measured+ear",
+   "note": "NOT in the supplied vocal stem — placed from the timing given by ear (4:28) and the mix transient at bar 161.60; position confirmed by ear, but nothing measurable underneath it"
+  },
+  {
+   "t": 274.06,
+   "e": 275.76,
+   "text": "Go!",
+   "kind": "shout",
+   "bar": 164.99,
+   "conf": "med",
+   "method": "measured+ear",
+   "note": "NOT in the supplied vocal stem — placed from the timing given by ear (4:34) and the mix transient on the downbeat of bar 165; position confirmed by ear, but nothing measurable underneath it"
+  }
+ ]
+}

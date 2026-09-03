@@ -1,0 +1,47 @@
+# --- the track ---------------------------------------------------------------
+# Not released. The renderer reads it from the repository root at runtime;
+# it is deliberately never committed.
+*.mp3
+*.wav
+*.flac
+*.txt
+
+# --- build and render output -------------------------------------------------
+node_modules/
+dist/
+frames/
+public/
+stills/
+*.mp4
+*.mov
+
+# NOTE: lyrics.srt IS committed. It is the YouTube caption track and ships with
+# the video, so unlike the audio it belongs in the repository.
+
+# --- generated single-file preview -------------------------------------------
+# Rebuilt by `npm run pack`; it embeds the whole bundle, so committing it would
+# duplicate the entire source tree on every change.
+preview.html
+
+# --- editors / OS ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- analysis scratch --------------------------------------------------------
+# Stems, decoded WAVs, click tracks, caption burn-ins. Regenerable, and large.
+work/
+
+# --- package manager ---------------------------------------------------------
+# This is an npm project: package-lock.json is the lockfile and there is no
+# pnpm-lock.yaml and no packageManager field. A .pnpm-store/ directory in the
+# working tree is the residue of one stray `pnpm install` and is not used by
+# anything. Ignored so it cannot be committed by accident; delete it freely.
+.pnpm-store/
+
+# --- render scratch ----------------------------------------------------------
+# Frame dumps from `node render.mjs --png <dir>`. The name is chosen per run,
+# so this covers the convention rather than every past choice.
+frames*/
+

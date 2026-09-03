@@ -1,0 +1,39 @@
+{
+  "name": "gateway-music-video",
+  "type": "module",
+  "description": "Generative music video for Spot \u2014 Gateway (Mix 2026)",
+  "license": "MIT",
+  "scripts": {
+    "setup": "node setup.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "timeline": "node tools/build-timeline.mjs",
+    "render": "vite build && node render.mjs",
+    "check": "vite build && node check-scenes.mjs",
+    "encode": "node encode.mjs",
+    "pack": "node pack.mjs",
+    "srt": "node srt.mjs",
+    "stills": "vite build && node stills.mjs",
+    "sweep": "node sweep.mjs",
+    "film": "vite build && node render.mjs --from 0 --to 293.41 --out gateway.mp4",
+    "volcano": "vite build && node render.mjs --from 115 --to 128 --out volcano.mp4",
+    "volcano-png": "vite build && node render.mjs --from 118.4 --to 118.9 --png frames118 --jobs 4",
+    "ending": "vite build && node render.mjs --from 249 --to 292.5 --out ending.mp4",
+    "scenes": "node tools/build-scenes-doc.mjs"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "playwright": "^1.47.0"
+  },
+  "preview": {
+    "scene": "",
+    "//": "which scene `npm run pack` opens the preview on; --scene overrides"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "//scripts": "Ranges baked in rather than passed on the command line: npm run film's range lives here and has never been the thing that failed."
+}
